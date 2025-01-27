@@ -1,0 +1,275 @@
+* {
+  font-family: "Montserrat", serif;
+}
+.dashboard-container {
+  margin: 50px;
+  padding: 20px;
+  background-color: rgba(209, 203, 203, 0.399);
+  border-radius: 10px;
+}
+.placement-section {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.placement--button1 {
+  background-color: red;
+  font-weight: bolder;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.placement--button {
+  background-color: white;
+  color: black;
+  border: 2px solid #e54335;
+  font-weight: bolder;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+hr {
+  border: 1px solid red;
+}
+.current-company-detials {
+  border-radius: 10px;
+  padding: 10px 40px 40px 10px;
+  background-color: white;
+  border: 2px solid #e54335;
+}
+.company-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.company-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+.company-grade {
+  margin: 0px;
+  background-image: linear-gradient(red, blue);
+  color: transparent;
+  background-clip: text;
+  font-size: 60px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+.designation-info {
+  color: grey;
+}
+.desig-company {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.remix {
+  height: 50px;
+  width: 50px;
+  background-color: #4caf50;
+  color: salmon;
+}
+.card1 {
+  border: 1px solid rgb(46, 45, 45);
+  border-radius: 10px;
+  height: 100%;
+  width: 33.33%;
+}
+.card2 {
+  border: 1px solid rgb(46, 45, 45);
+  border-radius: 10px;
+  height: 100%;
+  width: 33.33%;
+}
+.card3 {
+  border: 1px solid rgb(46, 45, 45);
+  background-color: #4caf50;
+  border-radius: 10px;
+  height: 100%;
+  width: 33.33%;
+}
+.card-container {
+  gap: 10px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+#card {
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.boldness {
+  font-weight: bold;
+  font-size: 17px;
+}
+.Upload {
+  width: 100%;
+  background-color: #000000;
+  border: none;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+#files {
+  display: none;
+}
+.label {
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+}
+#underline-text {
+  text-decoration: underline;
+  color: #4435e5;
+}
+#underline-text-3 {
+  text-decoration: underline;
+  color: #070707;
+}
+#underline-text-4{
+  text-decoration: underline;
+  color: #ffffff;
+}
+.Upload-3 {
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.vertical_dotted_line {
+  border-left: 2px dotted black;
+  height: 100px;
+}
+.previous-company-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card3-heading {
+  color: white;
+}
+img {
+  height: 25px;
+  width: 25px;
+}
+.company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Detail-1{
+  margin-top:20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+.job-applications{
+  padding:10px;
+  color: white;
+  border-radius: 10px;
+  background-color: #4280ef ;
+}
+.previous-companies{
+  margin-bottom:10px;
+}
+.application-container{
+  display:flex ;
+  flex-direction:row;
+  gap:5px;
+}
+#application-details{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:10px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+}
+.application-company-name{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.horizotal_dotted_line{
+  border-bottom: 2px dotted black;
+  width: 100%;
+}
+.application-heading{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+.move-upright{
+  border-radius:100%;
+  background-color: grey;
+  padding: 10px;
+}
+#application-para
+{
+  margin-top:10px;
+  font-size: 13px;
+  font-weight: 800;
+}
+.application-steps{
+  gap: 5px;
+}
+.tick{
+  color: green;
+}
