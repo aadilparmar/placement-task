@@ -99,13 +99,16 @@ p {
   color: salmon;
 }
 .card1 {
+ 
   border: 1px solid rgb(46, 45, 45);
+  border-top: 10px solid red;
   border-radius: 10px;
   height: 100%;
   width: 33.33%;
 }
 .card2 {
   border: 1px solid rgb(46, 45, 45);
+  border-top: 10px solid red;
   border-radius: 10px;
   height: 100%;
   width: 33.33%;
@@ -250,6 +253,12 @@ img {
   border-bottom: 2px dotted black;
   width: 100%;
 }
+.recommend-address{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  gap:10px;
+}
 .application-heading{
   display:flex;
   flex-direction:row;
@@ -272,4 +281,108 @@ img {
 }
 .tick{
   color: green;
+}
+.Recommend-container{
+  display:flex;
+  justify-content: space-evenly;
+  height:300px;
+  padding:10px;
+  flex-direction:row;
+  align-items: center;
+  gap:5px;
+}
+#Recommend{
+  display: flex;
+  flex-direction: column;
+  background-color:white;
+  width:20%;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.recommend-heading{
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  align-items: center;
+}
+h4{
+  padding:10px;
+  border-radius:0px 20px 20px 0px;
+  border: 1px solid black;
+  background-color: #e5443596;
+}
+.h4-1{
+  padding:10px;
+  border-radius:0px 20px 20px 0px;
+  border: 1px solid black;
+  background-color: #49e53596;
+}
+.h4-2{
+  padding:10px;
+  border-radius:0px 20px 20px 0px;
+  border: 1px solid black;
+  background-color: #d9e53596;
+}
+.h4-3{
+  padding:10px;
+  border-radius:0px 20px 20px 0px;
+  border: 1px solid black;
+  background-color: #3590e596;
+}
+.detail-company{
+  padding:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  gap:10px;
+  align-items: center;
+}
+.live-job-main-section{
+  border-radius:10px;
+  border:1px solid black;
+  height:650px;
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+#section{
+  height:300px;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.button-main{
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.549) 60%, rgba(0, 0, 255, 0.505));
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 15px 35px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h7{
+  font-weight: bold;
+}
+.live-job-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.live-job-header-details{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+}
+.search{
+  border:1px solid black;
+  padding:10px;
+  border-radius: 10px;
 }

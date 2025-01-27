@@ -5,12 +5,89 @@ import { Triangle } from "lucide-react";
 import { File } from "lucide-react";
 import { CircleCheckBig } from "lucide-react";
 import { MoveUpRight } from "lucide-react";
+import { EllipsisVertical } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { User } from "lucide-react";
+import { Search } from "lucide-react";
+import { Filter } from "lucide-react";
 function App() {
   const [file, setFile] = useState();
+  const [buttonText, setButtonText] = useState("Apply Now");
+  const [buttonText2, setButtonText2] = useState("Apply Now");
+  const [buttonText3, setButtonText3] = useState("Apply Now");
+  const [buttonText4, setButtonText4] = useState("Apply Now");
+  const [buttonText5, setButtonText5] = useState("Apply Now");
+  const [buttonText6, setButtonText6] = useState("Apply Now");
+  const [buttonText7, setButtonText7] = useState("Apply Now");
+  const [buttonText8, setButtonText8] = useState("Apply Now");
+  const [buttonText9, setButtonText9] = useState("Apply Now");
+  const [buttonText10, setButtonText10] = useState("Apply Now");
+  const [buttonText11, setButtonText11] = useState("Apply Now");
+  const [buttonText12, setButtonText12] = useState("Apply Now");
+  const [buttonColor, setButtonColor] = useState("white");
+  const [buttonColor2, setButtonColor2] = useState("white");
+  const [buttonColor3, setButtonColor3] = useState("white");
+  const [buttonColor4, setButtonColor4] = useState("white");
+  const [buttonColor5, setButtonColor5] = useState("white");
+  const [buttonColor6, setButtonColor6] = useState("white");
+  const [buttonColor7, setButtonColor7] = useState("white");
+  const [buttonColor8, setButtonColor8] = useState("white");
+  const [buttonColor9, setButtonColor9] = useState("white");
+  const [buttonColor10, setButtonColor10] = useState("white");
+  const [buttonColor11, setButtonColor11] = useState("white");
+  const [buttonColor12, setButtonColor12] = useState("white");
   function handleChange(e) {
     console.log(e.target.files);
     setFile(URL.createObjectURL(e.target.files[0]));
   }
+  const handleClick = () => {
+    setButtonText("Applied!");
+    setButtonColor("blue");
+  };
+  const handleClick2 = () => {
+    setButtonText2("Applied!");
+    setButtonColor2("blue");
+  };
+  const handleClick3 = () => {
+    setButtonText3("Applied!");
+    setButtonColor3("blue");
+  };
+  const handleClick4 = () => {
+    setButtonText4("Applied!");
+    setButtonColor4("blue");
+  };
+  const handleClick5 = () => {
+    setButtonText5("Applied!");
+    setButtonColor5("blue");
+  };
+  const handleClick6 = () => {
+    setButtonText6("Applied!");
+    setButtonColor6("blue");
+  };
+  const handleClick7 = () => {
+    setButtonText7("Applied!");
+    setButtonColor7("blue");
+  };
+  const handleClick8 = () => {
+    setButtonText8("Applied!");
+    setButtonColor8("blue");
+  };
+  const handleClick9 = () => {
+    setButtonText9("Applied!");
+    setButtonColor9("blue");
+  };
+  const handleClick10 = () => {
+    setButtonText10("Applied!");
+    setButtonColor10("blue");
+  };
+  const handleClick11 = () => {
+    setButtonText11("Applied!");
+    setButtonColor11("blue");
+  };
+  const handleClick12 = () => {
+    setButtonText12("Applied!");
+    setButtonColor12("blue");
+  };
   return (
     <>
       <div className="dashboard-container">
@@ -227,170 +304,651 @@ function App() {
           <div className="application-container">
             <div id="application-details" className="application-1">
               <div className="application-heading">
-              <p>Application No.</p>
-              <MoveUpRight className="move-upright" />
+                <p>Application No.</p>
+                <MoveUpRight className="move-upright" />
               </div>
               <h1>001:</h1>
               <div className="application-company-name">
-              <img src="/src/assets/pngwing.png" alt="" />
-              <h5>Ecubix Solution <p></p>
-              <p></p>
-              <p></p>
-              <p></p>Pvt. Ltd. (Selected)</h5>
+                <img src="/src/assets/pngwing.png" alt="" />
+                <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
               </div>
               <div className="horizotal_dotted_line"></div>
               <div className="application-steps">
-                <p id="application-para"><CircleCheckBig size={17} className="tick" strokeWidth={3} />Applied</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Sortlisted</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Interview Scheduled</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Appiered for Interview</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Selected</p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Applied
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Sortlisted
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Interview Scheduled
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Appiered for Interview
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Selected
+                </p>
               </div>
             </div>
             <div id="application-details" className="application-2">
               <div className="application-heading">
                 <p>Application No.</p>
-              <MoveUpRight className="move-upright" />
+                <MoveUpRight className="move-upright" />
               </div>
               <h1>002:</h1>
               <div className="application-company-name">
-              <img src="/src/assets/pngwing.png" alt="" />
-              <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
+                <img src="/src/assets/pngwing.png" alt="" />
+                <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
               </div>
               <div className="horizotal_dotted_line"></div>
               <div className="application-steps">
-              <p id="application-para"><CircleCheckBig size={17} className="tick" strokeWidth={3} />Applied</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Sortlisted</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Interview Scheduled</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Appiered for Interview</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Selected</p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Applied
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Sortlisted
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Interview Scheduled
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Appiered for Interview
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Selected
+                </p>
               </div>
             </div>
             <div id="application-details" className="application-3">
               <div className="application-heading">
                 <p>Application No.</p>
-              <MoveUpRight className="move-upright" />
+                <MoveUpRight className="move-upright" />
               </div>
               <h1>003:</h1>
               <div className="application-company-name">
-              <img src="/src/assets/pngwing.png" alt="" />
-              <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
+                <img src="/src/assets/pngwing.png" alt="" />
+                <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
               </div>
               <div className="horizotal_dotted_line"></div>
               <div className="application-steps">
-              <p id="application-para"><CircleCheckBig size={17} className="tick" strokeWidth={3} />Applied</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Sortlisted</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Interview Scheduled</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Appiered for Interview</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Selected</p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Applied
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Sortlisted
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Interview Scheduled
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Appiered for Interview
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Selected
+                </p>
               </div>
             </div>
             <div id="application-details" className="application-4">
               <div className="application-heading">
                 <p>Application No.</p>
-              <MoveUpRight className="move-upright" />
+                <MoveUpRight className="move-upright" />
               </div>
               <h1>004:</h1>
               <div className="application-company-name">
-              <img src="/src/assets/pngwing.png" alt="" />
-              <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
+                <img src="/src/assets/pngwing.png" alt="" />
+                <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
               </div>
               <div className="horizotal_dotted_line"></div>
               <div className="application-steps">
-              <p id="application-para"><CircleCheckBig size={17} className="tick" strokeWidth={3} />Applied</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Sortlisted</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Interview Scheduled</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Appiered for Interview</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Selected</p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Applied
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Sortlisted
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Interview Scheduled
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Appiered for Interview
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Selected
+                </p>
               </div>
             </div>
             <div id="application-details" className="application-5">
               <div className="application-heading">
                 <p>Application No.</p>
-              <MoveUpRight className="move-upright" />
+                <MoveUpRight className="move-upright" />
               </div>
               <h1>005:</h1>
               <div className="application-company-name">
-              <img src="/src/assets/pngwing.png" alt="" />
-              <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
+                <img src="/src/assets/pngwing.png" alt="" />
+                <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
               </div>
               <div className="horizotal_dotted_line"></div>
               <div className="application-steps">
-              <p id="application-para"><CircleCheckBig size={17} className="tick" strokeWidth={3} />Applied</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Sortlisted</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Interview Scheduled</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Appiered for Interview</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Selected</p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Applied
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Sortlisted
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Interview Scheduled
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Appiered for Interview
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Selected
+                </p>
               </div>
             </div>
             <div id="application-details" className="application-6">
               <div className="application-heading">
                 <p>Application No.</p>
-              <MoveUpRight className="move-upright" />
+                <MoveUpRight className="move-upright" />
               </div>
               <h1>006:</h1>
               <div className="application-company-name">
-              <img src="/src/assets/pngwing.png" alt="" />
-              <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
+                <img src="/src/assets/pngwing.png" alt="" />
+                <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
               </div>
               <div className="horizotal_dotted_line"></div>
               <div className="application-steps">
-              <p id="application-para"><CircleCheckBig size={17} className="tick" strokeWidth={3} />Applied</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Sortlisted</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Interview Scheduled</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Appiered for Interview</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Selected</p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Applied
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Sortlisted
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Interview Scheduled
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Appiered for Interview
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Selected
+                </p>
               </div>
             </div>
             <div id="application-details" className="application-7">
               <div className="application-heading">
                 <p>Application No.</p>
-              <MoveUpRight className="move-upright" />
+                <MoveUpRight className="move-upright" />
               </div>
               <h1>007:</h1>
               <div className="application-company-name">
-              <img src="/src/assets/pngwing.png" alt="" />
-              <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
+                <img src="/src/assets/pngwing.png" alt="" />
+                <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
               </div>
               <div className="horizotal_dotted_line"></div>
               <div className="application-steps">
-              <p id="application-para"><CircleCheckBig size={17} className="tick" strokeWidth={3} />Applied</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Sortlisted</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Interview Scheduled</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Appiered for Interview</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Selected</p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Applied
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Sortlisted
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Interview Scheduled
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Appiered for Interview
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Selected
+                </p>
               </div>
             </div>
             <div id="application-details" className="application-8">
               <div className="application-heading">
                 <p>Application No.</p>
-              <MoveUpRight className="move-upright" />
+                <MoveUpRight className="move-upright" />
               </div>
               <h1>008:</h1>
               <div className="application-company-name">
-              <img src="/src/assets/pngwing.png" alt="" />
-              <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
+                <img src="/src/assets/pngwing.png" alt="" />
+                <h5>Ecubix Solution Pvt. Ltd. (Selected)</h5>
               </div>
               <div className="horizotal_dotted_line"></div>
               <div className="application-steps">
-              <p id="application-para"><CircleCheckBig size={17} className="tick" strokeWidth={3} />Applied</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Sortlisted</p>
-                <p id="application-para"><CircleCheckBig size={17}  className="tick" strokeWidth={3} />Interview Scheduled</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Appiered for Interview</p>
-                <p id="application-para"><CircleCheckBig size={17}  strokeWidth={3} className="tick" />Selected</p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Applied
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Sortlisted
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} className="tick" strokeWidth={3} />
+                  Interview Scheduled
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Appiered for Interview
+                </p>
+                <p id="application-para">
+                  <CircleCheckBig size={17} strokeWidth={3} className="tick" />
+                  Selected
+                </p>
               </div>
             </div>
           </div>
         </div>
-
         <div className="recommended-jobs">
           <h2>Recommended Jobs</h2>
-          <p>UI Designer - 10.11 Design (05 Vacancies)</p>
+          <div className="Recommend-container">
+            <div className="Recommend-1" id="Recommend">
+              <div className="recommend-heading">
+                <h4>UI Designer</h4>
+                <EllipsisVertical />
+              </div>
+              <div className="detail-company">
+                <h7>10.11</h7>
+                <h7>Design</h7>
+                <img src="/src/assets/tick.png" alt="" />
+              </div>
+              <div className="recommend-address">
+                <div className="horizotal_dotted_line"></div>
+                <p>
+                  <MapPin size={17} />
+                  Makarba,Ahmedabad
+                </p>
+                <p>
+                  <User size={17} />
+                  05 Vacancy
+                </p>
+                <div className="horizotal_dotted_line"></div>
+                <button
+                  className="button-main"
+                  style={{ backgroundColor: buttonColor }}
+                  onClick={handleClick}
+                >
+                  {buttonText}
+                </button>
+              </div>
+            </div>
+            <div className="Recommend-2" id="Recommend">
+              <div className="recommend-heading">
+                <h4 className="h4-1">Front End Devloper</h4>
+                <EllipsisVertical />
+              </div>
+              <div className="detail-company">
+                <h7>Tata Consultancy Services</h7>
+                <img src="/src/assets/tick.png" alt="" />
+              </div>
+              <div className="recommend-address">
+                <div className="horizotal_dotted_line"></div>
+                <p>
+                  <MapPin size={17} />
+                  Makarba,Ahmedabad
+                </p>
+                <p>
+                  <User size={17} />
+                  05 Vacancy
+                </p>
+                <div className="horizotal_dotted_line"></div>
+                <button
+                  className="button-main"
+                  style={{ backgroundColor: buttonColor2 }}
+                  onClick={handleClick2}
+                >
+                  {buttonText2}
+                </button>
+              </div>
+            </div>
+            <div className="Recommend-3" id="Recommend">
+              <div className="recommend-heading">
+                <h4 className="h4-2">Product Designer</h4>
+                <EllipsisVertical />
+              </div>
+              <div className="detail-company">
+                <h7>Think Design</h7>
+                <img src="/src/assets/tick.png" alt="" />
+              </div>
+              <div className="recommend-address">
+                <div className="horizotal_dotted_line"></div>
+                <p>
+                  <MapPin size={17} />
+                  Makarba,Ahmedabad
+                </p>
+                <p>
+                  <User size={17} />
+                  05 Vacancy
+                </p>
+                <div className="horizotal_dotted_line"></div>
+                <button
+                  className="button-main"
+                  onClick={handleClick3}
+                  style={{ backgroundColor: buttonColor3 }}
+                >
+                  {buttonText3}
+                </button>
+              </div>
+            </div>
+            <div className="Recommend-4" id="Recommend">
+              <div className="recommend-heading">
+                <h4 className="h4-3">UI Designer</h4>
+                <EllipsisVertical />
+              </div>
+              <div className="detail-company">
+                <h7>10.11</h7>
+                <h7>Design</h7>
+                <img src="/src/assets/tick.png" alt="" />
+              </div>
+              <div className="recommend-address">
+                <div className="horizotal_dotted_line"></div>
+                <p>
+                  <MapPin size={17} />
+                  Makarba,Ahmedabad
+                </p>
+                <p>
+                  <User size={17} />
+                  05 Vacancy
+                </p>
+                <div className="horizotal_dotted_line"></div>
+                <button
+                  className="button-main"
+                  onClick={handleClick4}
+                  style={{ backgroundColor: buttonColor4 }}
+                >
+                  {buttonText4}
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-
         <div className="live-jobs">
-          <h2>Live Jobs</h2>
-          <p>UI Designer - 10.11 Design (Apply Now)</p>
+          <div className="live-job-header">
+            <h2>Live Jobs</h2>
+            <div className="live-job-header-details"> 
+            <Search className="search"/>
+            <Filter className="search" />
+            </div>
+          </div>
+          <div className="live-job-main-section">
+            <div className="live-job-section-1" id="section">
+              <div className="Recommend-1" id="Recommend">
+                <div className="recommend-heading">
+                  <h4 className="h4-3">UI Designer</h4>
+                  <EllipsisVertical />
+                </div>
+                <div className="detail-company">
+                  <h7>10.11</h7>
+                  <h7>Design</h7>
+                  <img src="/src/assets/tick.png" alt="" />
+                </div>
+                <div className="recommend-address">
+                  <div className="horizotal_dotted_line"></div>
+                  <p>
+                    <MapPin size={17} />
+                    Makarba,Ahmedabad
+                  </p>
+                  <p>
+                    <User size={17} />
+                    05 Vacancy
+                  </p>
+                  <div className="horizotal_dotted_line"></div>
+                  <button
+                    className="button-main"
+                    onClick={handleClick5}
+                    style={{ backgroundColor: buttonColor5 }}
+                  >
+                    {buttonText5}
+                  </button>
+                </div>
+              </div>
+              <div className="Recommend-1" id="Recommend">
+                <div className="recommend-heading">
+                  <h4 className="h4-2">Front End Devloper</h4>
+                  <EllipsisVertical />
+                </div>
+                <div className="detail-company">
+                  <h7>Tata Consultancy Services</h7>
+                  <img src="/src/assets/tick.png" alt="" />
+                </div>
+                <div className="recommend-address">
+                  <div className="horizotal_dotted_line"></div>
+                  <p>
+                    <MapPin size={17} />
+                    Makarba,Ahmedabad
+                  </p>
+                  <p>
+                    <User size={17} />
+                    05 Vacancy
+                  </p>
+                  <div className="horizotal_dotted_line"></div>
+                  <button
+                    className="button-main"
+                    onClick={handleClick6}
+                    style={{ backgroundColor: buttonColor6 }}
+                  >
+                    {buttonText6}
+                  </button>
+                </div>
+              </div>
+              <div className="Recommend-1" id="Recommend">
+                <div className="recommend-heading">
+                  <h4 className="h4-1">Product Designer</h4>
+                  <EllipsisVertical />
+                </div>
+                <div className="detail-company">
+                  <h7>Think Design</h7>
+                  <img src="/src/assets/tick.png" alt="" />
+                </div>
+                <div className="recommend-address">
+                  <div className="horizotal_dotted_line"></div>
+                  <p>
+                    <MapPin size={17} />
+                    Makarba,Ahmedabad
+                  </p>
+                  <p>
+                    <User size={17} />
+                    05 Vacancy
+                  </p>
+                  <div className="horizotal_dotted_line"></div>
+                  <button
+                    className="button-main"
+                    onClick={handleClick7}
+                    style={{ backgroundColor: buttonColor7 }}
+                  >
+                    {buttonText7}
+                  </button>
+                </div>
+              </div>
+              <div className="Recommend-1" id="Recommend">
+                <div className="recommend-heading">
+                  <h4>UI Designer</h4>
+                  <EllipsisVertical />
+                </div>
+                <div className="detail-company">
+                  <h7>10.11</h7>
+                  <h7>Design</h7>
+                  <img src="/src/assets/tick.png" alt="" />
+                </div>
+                <div className="recommend-address">
+                  <div className="horizotal_dotted_line"></div>
+                  <p>
+                    <MapPin size={17} />
+                    Makarba,Ahmedabad
+                  </p>
+                  <p>
+                    <User size={17} />
+                    05 Vacancy
+                  </p>
+                  <div className="horizotal_dotted_line"></div>
+                  <button
+                    className="button-main"
+                    onClick={handleClick8}
+                    style={{ backgroundColor: buttonColor8 }}
+                  >
+                    {buttonText8}
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="live-job-section-2" id="section">
+              <div className="Recommend-1" id="Recommend">
+                <div className="recommend-heading">
+                  <h4 className="h4-2">UI Designer</h4>
+                  <EllipsisVertical />
+                </div>
+                <div className="detail-company">
+                  <h7>Tata Consultancy Services </h7>
+                  <img src="/src/assets/tick.png" alt="" />
+                </div>
+                <div className="recommend-address">
+                  <div className="horizotal_dotted_line"></div>
+                  <p>
+                    <MapPin size={17} />
+                    Makarba,Ahmedabad
+                  </p>
+                  <p>
+                    <User size={17} />
+                    05 Vacancy
+                  </p>
+                  <div className="horizotal_dotted_line"></div>
+                  <button
+                    className="button-main"
+                    onClick={handleClick9}
+                    style={{ backgroundColor: buttonColor9 }}
+                  >
+                    {buttonText9}
+                  </button>
+                </div>
+              </div>
+              <div className="Recommend-1" id="Recommend">
+                <div className="recommend-heading">
+                  <h4 className="h4-1">UI Designer</h4>
+                  <EllipsisVertical />
+                </div>
+                <div className="detail-company">
+                  <h7>10.11</h7>
+                  <h7>Design</h7>
+                  <img src="/src/assets/tick.png" alt="" />
+                </div>
+                <div className="recommend-address">
+                  <div className="horizotal_dotted_line"></div>
+                  <p>
+                    <MapPin size={17} />
+                    Makarba,Ahmedabad
+                  </p>
+                  <p>
+                    <User size={17} />
+                    05 Vacancy
+                  </p>
+                  <div className="horizotal_dotted_line"></div>
+                  <button
+                    className="button-main"
+                    onClick={handleClick10}
+                    style={{ backgroundColor: buttonColor10 }}
+                  >
+                    {buttonText10}
+                  </button>
+                </div>
+              </div>
+              <div className="Recommend-1" id="Recommend">
+                <div className="recommend-heading">
+                  <h4>UI Designer</h4>
+                  <EllipsisVertical />
+                </div>
+                <div className="detail-company">
+                  <h7> Think Design</h7>
+                  <img src="/src/assets/tick.png" alt="" />
+                </div>
+                <div className="recommend-address">
+                  <div className="horizotal_dotted_line"></div>
+                  <p>
+                    <MapPin size={17} />
+                    Makarba,Ahmedabad
+                  </p>
+                  <p>
+                    <User size={17} />
+                    05 Vacancy
+                  </p>
+                  <div className="horizotal_dotted_line"></div>
+                  <button
+                    className="button-main"
+                    onClick={handleClick11}
+                    style={{ backgroundColor: buttonColor11 }}
+                  >
+                    {buttonText11}
+                  </button>
+                </div>
+              </div>
+              <div className="Recommend-1" id="Recommend">
+                <div className="recommend-heading">
+                  <h4 className="h4-3">UI Designer</h4>
+                  <EllipsisVertical />
+                </div>
+                <div className="detail-company">
+                  <h7>10.11</h7>
+                  <h7>Design</h7>
+                  <img src="/src/assets/tick.png" alt="" />
+                </div>
+                <div className="recommend-address">
+                  <div className="horizotal_dotted_line"></div>
+                  <p>
+                    <MapPin size={17} />
+                    Makarba,Ahmedabad
+                  </p>
+                  <p>
+                    <User size={17} />
+                    05 Vacancy
+                  </p>
+                  <div className="horizotal_dotted_line"></div>
+                  <button
+                    className="button-main"
+                    onClick={handleClick12}
+                    style={{ backgroundColor: buttonColor12 }}
+                  >
+                    {buttonText12}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
