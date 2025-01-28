@@ -110,9 +110,9 @@ function App() {
             <div className="current-company-detials">
               <div className="company-details">
                 <div className="company">
-                  <img src="/src/assets/pngwing.png" alt="" />
+                  <img src="/assets/pngwing.png" alt="" />
                   <p className="company-name"> Ecubix Solution Pvt. Ltd.</p>
-                  <img src="/src/assets/tick.png" alt="" />
+                  <img src="/assets/tick.png" alt="" />
                 </div>
                 <div class="vertical_dotted_line"></div>
                 <div className="grade">
