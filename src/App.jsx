@@ -10,6 +10,7 @@ import { MapPin } from "lucide-react";
 import { User } from "lucide-react";
 import { Search } from "lucide-react";
 import { Filter } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 function App() {
   const [file, setFile] = useState();
   const [buttonText, setButtonText] = useState("Apply Now");
@@ -88,6 +89,26 @@ function App() {
     setButtonText12("Applied!");
     setButtonColor12("blue");
   };
+  const [icon1, setIcon1] = useState(<Triangle strokeWidth={3} />);
+  const changeEmoji1 = () => {
+    const icons = [<ChevronDown strokeWidth={3} />];
+    setIcon1(icons);
+};
+const [icon2, setIcon2] = useState(<Triangle strokeWidth={3} />);
+  const changeEmoji2 = () => {
+    const icons = [<ChevronDown strokeWidth={3} />];
+    setIcon2(icons);
+};
+const [icon3, setIcon3] = useState(<Triangle strokeWidth={3} />);
+  const changeEmoji3 = () => {
+    const icons = [<ChevronDown strokeWidth={3} />];
+    setIcon3(icons);
+};
+const [icon4, setIcon4] = useState(<Triangle strokeWidth={3} />);
+  const changeEmoji4 = () => {
+    const icons = [<ChevronDown strokeWidth={3} />];
+    setIcon4(icons);
+};
   return (
     <>
       <div className="dashboard-container">
@@ -110,9 +131,9 @@ function App() {
             <div className="current-company-detials">
               <div className="company-details">
                 <div className="company">
-                  <img src="/assets/pngwing.png" alt="image" />
+                  <img src="/src/assets/pngwing.png" alt="image" />
                   <p className="company-name"> Ecubix Solution Pvt. Ltd.</p>
-                  <img src="/assets/tick.png" alt="image" />
+                  <img src="/src/assets/tick.png" alt="image" />
                 </div>
                 <div class="vertical_dotted_line"></div>
                 <div className="grade">
@@ -216,10 +237,13 @@ function App() {
                 <p className="designation-info">Working Period: </p>
                 <p className="desig-company">June,2023 - September,2024 </p>
               </div>
-              <Triangle strokeWidth={3} />
+              <button className="no-working-button" onClick={changeEmoji1}>
+                <div>
+                  {icon1}
+                </div>
+              </button>
             </div>{" "}
           </div>
-
           <div className="Detail-1">
             <div className="company-details">
               <div className="company">
@@ -242,7 +266,11 @@ function App() {
                 <p className="designation-info">Working Period: </p>
                 <p className="desig-company">January,2021 - April,2023 </p>
               </div>
-              <Triangle strokeWidth={3} />
+              <button className="no-working-button" onClick={changeEmoji2}>
+                <div>
+                  {icon2}
+                </div>
+              </button>
             </div>{" "}
           </div>
           <div className="Detail-1">
@@ -267,7 +295,11 @@ function App() {
                 <p className="designation-info">Working Period: </p>
                 <p className="desig-company">April,2018 - December,2020 </p>
               </div>
-              <Triangle strokeWidth={3} />
+              <button className="no-working-button" onClick={changeEmoji3}>
+                <div>
+                  {icon3}
+                </div>
+              </button>
             </div>{" "}
           </div>
           <div className="Detail-1">
@@ -292,7 +324,11 @@ function App() {
                 <p className="designation-info">Working Period: </p>
                 <p className="desig-company">April,2018 - December,2020 </p>
               </div>
-              <Triangle strokeWidth={3} />
+              <button className="no-working-button" onClick={changeEmoji4}>
+                <div>
+                  {icon4}
+                </div>
+              </button>
             </div>{" "}
           </div>
         </div>
@@ -702,9 +738,9 @@ function App() {
         <div className="live-jobs">
           <div className="live-job-header">
             <h2>Live Jobs</h2>
-            <div className="live-job-header-details"> 
-            <Search className="search"/>
-            <Filter className="search" />
+            <div className="live-job-header-details">
+              <Search className="search" />
+              <Filter className="search" />
             </div>
           </div>
           <div className="live-job-main-section">
