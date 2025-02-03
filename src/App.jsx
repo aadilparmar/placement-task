@@ -90,25 +90,34 @@ function App() {
     setButtonColor12("blue");
   };
   const [icon1, setIcon1] = useState(<Triangle strokeWidth={3} />);
-  const changeEmoji1 = () => {
-    const icons = [<ChevronDown strokeWidth={3} />];
-    setIcon1(icons);
-};
-const [icon2, setIcon2] = useState(<Triangle strokeWidth={3} />);
-  const changeEmoji2 = () => {
-    const icons = [<ChevronDown strokeWidth={3} />];
-    setIcon2(icons);
-};
-const [icon3, setIcon3] = useState(<Triangle strokeWidth={3} />);
-  const changeEmoji3 = () => {
-    const icons = [<ChevronDown strokeWidth={3} />];
-    setIcon3(icons);
-};
-const [icon4, setIcon4] = useState(<Triangle strokeWidth={3} />);
-  const changeEmoji4 = () => {
-    const icons = [<ChevronDown strokeWidth={3} />];
-    setIcon4(icons);
-};
+  const [isInitial, setIsInitial] = useState(true);
+  const [bgColor1, setBgColor1] = useState("");
+  const toggleIcon = () => {
+    setIcon1(isInitial ? <ChevronDown strokeWidth={3} /> :<Triangle strokeWidth={3} />);
+    setBgColor1(isInitial ?"bg-gradient1" :"bg-gradientInitial");
+    setIsInitial(!isInitial);
+  };
+  const [icon2, setIcon2] = useState(<Triangle strokeWidth={3} />);
+  const [bgColor2, setBgColor2] = useState("");
+  const toggleIcon2 = () => {
+    setIcon2(isInitial ? <ChevronDown strokeWidth={3} /> :<Triangle strokeWidth={3} />);
+    setBgColor2(isInitial ?"bg-gradient1" :"bg-gradientInitial");
+    setIsInitial(!isInitial);
+  };
+  const [icon3, setIcon3] = useState(<Triangle strokeWidth={3} />);
+  const [bgColor3, setBgColor3] = useState("");
+  const toggleIcon3 = () => {
+    setIcon3(isInitial ? <ChevronDown strokeWidth={3} /> :<Triangle strokeWidth={3} />);
+    setBgColor3(isInitial ?"bg-gradient1" :"bg-gradientInitial");
+    setIsInitial(!isInitial);
+  };
+  const [icon4, setIcon4] = useState(<Triangle strokeWidth={3} />);
+  const [bgColor4, setBgColor4] = useState("");
+  const toggleIcon4 = () => {
+    setIcon4(isInitial ? <ChevronDown strokeWidth={3} /> :<Triangle strokeWidth={3} />);
+    setBgColor4(isInitial ?"bg-gradient1" :"bg-gradientInitial");
+    setIsInitial(!isInitial);
+  };
   return (
     <>
       <div className="dashboard-container">
@@ -213,50 +222,48 @@ const [icon4, setIcon4] = useState(<Triangle strokeWidth={3} />);
             <h2>Previous Companies</h2>
             <p id="underline-text-3">View all our previous company list</p>
           </div>
-          <div className="Detail-1">
+          <div className={`Detail-1 ${bgColor1}`}>
             <div className="company-details">
               <div className="company">
                 <img src="/src/assets/pngwing.png" alt="" />
                 <p className="company-name">Trades Solution Pvt Ltd</p>
                 <img src="/src/assets/tick.png" alt="" />
               </div>
-              <div class="vertical_dotted_line"></div>
+              <div className="vertical_dotted_line"></div>
               <div className="grade">
                 <p className="company-grade">A</p>
                 <p>Grade</p>
               </div>
-              <div class="vertical_dotted_line"></div>
+              <div className="vertical_dotted_line"></div>
               <div className="designation">
                 <p className="designation-info">Designation</p>
                 <p className="desig-company">
                   E-Commerce Marketplace Listing & Management
                 </p>
               </div>
-              <div class="vertical_dotted_line"></div>
+              <div className="vertical_dotted_line"></div>
               <div className="working">
                 <p className="designation-info">Working Period: </p>
                 <p className="desig-company">June,2023 - September,2024 </p>
               </div>
-              <button className="no-working-button" onClick={changeEmoji1}>
-                <div>
-                  {icon1}
-                </div>
+              <button className="no-working-button" onClick={toggleIcon}>
+                <div>{icon1}</div>
               </button>
             </div>{" "}
           </div>
-          <div className="Detail-1">
+          <div className={`Detail-1 ${bgColor2}`}>
             <div className="company-details">
               <div className="company">
                 <img src="/src/assets/pngwing.png" alt="" />
                 <p className="company-name">The North Face</p>
                 <img src="/src/assets/tick.png" alt="" />
               </div>
-              <div class="vertical_dotted_line"></div>
+              <div className="vertical_dotted_line"></div>
               <div className="grade">
                 <p className="company-grade">B</p>
                 <p>Grade</p>
               </div>
-              <div class="vertical_dotted_line"></div>
+              <div className="vertical_dotted_line"></div>
               <div className="designation">
                 <p className="designation-info">Designation</p>
                 <p className="desig-company">Computer System Analyst</p>
@@ -266,43 +273,39 @@ const [icon4, setIcon4] = useState(<Triangle strokeWidth={3} />);
                 <p className="designation-info">Working Period: </p>
                 <p className="desig-company">January,2021 - April,2023 </p>
               </div>
-              <button className="no-working-button" onClick={changeEmoji2}>
-                <div>
-                  {icon2}
-                </div>
+              <button className="no-working-button" onClick={toggleIcon2}>
+                <div>{icon2}</div>
               </button>
             </div>{" "}
           </div>
-          <div className="Detail-1">
+          <div className={`Detail-1 ${bgColor3}`}>
             <div className="company-details">
               <div className="company">
                 <img src="/src/assets/pngwing.png" alt="" />
                 <p className="company-name">Hawelett Packward Enterprise</p>
                 <img src="/src/assets/tick.png" alt="" />
               </div>
-              <div class="vertical_dotted_line"></div>
+              <div className="vertical_dotted_line"></div>
               <div className="grade">
                 <p className="company-grade">C</p>
                 <p>Grade</p>
               </div>
-              <div class="vertical_dotted_line"></div>
+              <div className="vertical_dotted_line"></div>
               <div className="designation">
                 <p className="designation-info">Designation</p>
                 <p className="desig-company">Cloud Network Engineer</p>
               </div>
-              <div class="vertical_dotted_line"></div>
+              <div className="vertical_dotted_line"></div>
               <div className="working">
                 <p className="designation-info">Working Period: </p>
                 <p className="desig-company">April,2018 - December,2020 </p>
               </div>
-              <button className="no-working-button" onClick={changeEmoji3}>
-                <div>
-                  {icon3}
-                </div>
+              <button className="no-working-button" onClick={toggleIcon3}>
+                <div>{icon3}</div>
               </button>
             </div>{" "}
           </div>
-          <div className="Detail-1">
+          <div className={`Detail-1 ${bgColor4}`}>
             <div className="company-details">
               <div className="company">
                 <img src="/src/assets/pngwing.png" alt="" />
@@ -324,10 +327,8 @@ const [icon4, setIcon4] = useState(<Triangle strokeWidth={3} />);
                 <p className="designation-info">Working Period: </p>
                 <p className="desig-company">April,2018 - December,2020 </p>
               </div>
-              <button className="no-working-button" onClick={changeEmoji4}>
-                <div>
-                  {icon4}
-                </div>
+              <button className="no-working-button" onClick={toggleIcon4}>
+                <div>{icon4}</div>
               </button>
             </div>{" "}
           </div>

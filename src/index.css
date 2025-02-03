@@ -215,10 +215,18 @@ img {
 }
 .Detail-1{
   margin-top:20px;
-  background-color: white;
   padding: 10px;
   border-radius: 10px;
   border: 1px solid #000000;
+}
+.bg-gradient1 {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.bg-gradientInitial {
+  background-color: white;
+}
+.bg-gradient2 {
+  background-color: white;
 }
 .job-applications{
   padding:10px;
@@ -387,6 +395,6 @@ h7{
   border-radius: 10px;
 }
 .no-working-button{
-  background-color: white;
+ background-color: transparent;
   color: #000000;
 }
